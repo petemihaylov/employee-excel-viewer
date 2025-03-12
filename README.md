@@ -1,4 +1,7 @@
 # Employee Dashboard
+[![pages-build-deployment](https://github.com/petemihaylov/employee-excel-viewer/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/petemihaylov/employee-excel-viewer/actions/workflows/pages/pages-build-deployment)
+
+[demo](https://petemihaylov.github.io/employee-excel-viewer/)
 
 ## Privacy and Security
 

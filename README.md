@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+## Features of the application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. **File Upload Interface**:
+   - Drag and drop Excel files
+   - Supports .xlsx, .xls, .xlsb, and .xlsm formats
 
-## Available Scripts
+2. **File Structure Visualization**:
+   - See all sheets, columns, and data types
+   - Preview sample data rows
 
-In the project directory, you can run:
+3. **Employee Data Analysis**:
+   - Orange highlighting for non-participating employees
+   - Part-time percentage correction
+   - Statistics by manager
+   - Visual charts for data distribution
 
-### `npm start`
+4. **Export Options**:
+   - Download processed data as Excel file
+   - Formatted statistics sheet included
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Privacy and Security
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+All processing is done client-side in the browser. No data is sent to any server or third-party service, making this application suitable for sensitive HR data.
 
-### `npm test`
+## Customization
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To customize the application for your specific needs:
 
-### `npm run build`
+1. Modify the column mappings in the `processFile` function if your Excel file has different headers
+2. Adjust the logic in `isPresentClassName` to match your participation criteria
+3. Change the styling by modifying the Tailwind CSS classes
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Troubleshooting
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- If your Excel file isn't loading correctly, check that it has the required columns (Leidinggevende, Parttime (%))
+- For large files, you may need to increase the browser memory limit by adding `NODE_OPTIONS=--max_old_space_size=4096` to your build commands
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Deployment
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Deploy to GitHub Pages:
+   ```bash
+   npm run deploy
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+3. Configure GitHub Pages in the repository settings:
+   - Go to your repository on GitHub
+   - Click Settings > Pages
+   - Select the `gh-pages` branch as the source
+   - Save your changes

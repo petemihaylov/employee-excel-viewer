@@ -1,3 +1,12 @@
+# Employee Dashboard
+[![pages-build-deployment](https://github.com/petemihaylov/employee-excel-viewer/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/petemihaylov/employee-excel-viewer/actions/workflows/pages/pages-build-deployment)
+
+[demo](https://petemihaylov.github.io/employee-excel-viewer/)
+
+## Privacy and Security
+
+⚠️ All processing is done client-side in the browser. No data is sent to any server or third-party service, making this application suitable for sensitive HR data.
+
 ## Features of the application
 
 1. **File Upload Interface**:
@@ -9,7 +18,7 @@
    - Preview sample data rows
 
 3. **Employee Data Analysis**:
-   - Orange highlighting for non-participating employees
+   - Highlighting for non-participating employees
    - Part-time percentage correction
    - Statistics by manager
    - Visual charts for data distribution
@@ -17,10 +26,6 @@
 4. **Export Options**:
    - Download processed data as Excel file
    - Formatted statistics sheet included
-
-## Privacy and Security
-
-All processing is done client-side in the browser. No data is sent to any server or third-party service, making this application suitable for sensitive HR data.
 
 ## Customization
 

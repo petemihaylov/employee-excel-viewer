@@ -881,7 +881,7 @@ const EmployeeDataVisualization = () => {
 
 // Add GitHub Corners for a "Fork me on GitHub" button
 const GitHubCorner = () => (
-  <a href="https://github.com/YOUR_USERNAME/employee-excel-viewer" 
+  <a href="https://github.com/petemihaylov/employee-excel-viewer" 
     className="github-corner" 
     aria-label="View source on GitHub"
     target="_blank"

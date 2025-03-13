@@ -3,6 +3,9 @@
 
 [demo](https://petemihaylov.github.io/employee-excel-viewer/)
 
+![image](https://github.com/user-attachments/assets/1750e1f9-d208-46fd-a255-690c758b0fda)
+![image](https://github.com/user-attachments/assets/61468eba-0660-4eaf-bfa3-ec3d2da33074)
+
 ## Privacy and Security
 
 ⚠️ All processing is done client-side in the browser. No data is sent to any server or third-party service, making this application suitable for sensitive HR data.
